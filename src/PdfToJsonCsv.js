@@ -18,6 +18,7 @@ function PdfToJsonConverter() {
     }
   };
 
+
   const convertPdfToJson = async () => {
     if (!pdfFile) {
       alert("Please upload a PDF file first!");
@@ -25,6 +26,7 @@ function PdfToJsonConverter() {
     }
 
     const fileReader = new FileReader();
+    
 
     fileReader.onload = async function () {
       const typedArray = new Uint8Array(this.result);
